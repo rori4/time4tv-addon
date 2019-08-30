@@ -1,0 +1,21 @@
+[package]
+name = "stremio-addon-blitz"
+version = "0.1.0"
+authors = ["Ivo Georgiev <ivo@strem.io>"]
+edition = "2018"
+build = "build.rs"
+
+[dependencies]
+rocket = "0.4.x"
+reqwest = "0.9.x"
+select = "0.4.x"
+stremio-core = { git = "https://github.com/stremio/stremio-core" }
+rocket_contrib = "*"
+lazy_static = "1.3.x"
+serde_json = "1.x.x"
+chrono = "0.4"
+rocket_cors = { git = "https://github.com/lawliet89/rocket_cors", branch = "master" }
+
+[build-dependencies]
+stremio-state-ng = { git = "https://github.com/stremio/stremio-state-ng" }
+serde_json = "1.x.x"
